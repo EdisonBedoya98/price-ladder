@@ -15,3 +15,7 @@ To detect data lag or desynchronization, I would rely on sequence numbers or tim
 When a desynchronization is detected, the client should pause incremental updates and request a fresh order book snapshot from the backend via a REST endpoint. Once the snapshot is received, the local state is replaced, and the WebSocket updates can safely resume.
 
 From a UI perspective, I would expose the feed connection status to the user (e.g., “Live”, “Delayed”, or “Reconnecting”) to ensure transparency and prevent traders from acting on stale data.
+
+## Deployed app in Vercel
+
+https://price-ladder.vercel.app/
