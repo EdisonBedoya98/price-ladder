@@ -19,7 +19,7 @@ export const PriceRow: FC<PriceRowProps> = memo(({ level }) => {
 
   return (
     <tr>
-      <td className="px-4 py-2 text-center">{level.price}</td>
+      <td>{level.price}</td>
       <FlashingCell value={level.bidSize} onClick={handleBidClick} />
       <FlashingCell value={level.askSize} onClick={handleAskClick} />
     </tr>

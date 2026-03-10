@@ -29,7 +29,7 @@ export const FlashingCell: FC<FlashingCellProps> = memo(
 
     return (
       <td
-        className={`px-4 py-2 text-center cursor-pointer hover:bg-gray-100 ${flashClass}`}
+        className={`text-center cursor-pointer hover:bg-gray-100 ${flashClass}`}
         onClick={onClick}
       >
         {value}
